@@ -1,0 +1,17 @@
+import numpy
+import math
+
+def prime(n):
+    for i in range(3,int(n**0.5)+1,2):
+        if n%i == 0:
+            return 0
+        return 1
+
+if __name__ == "__main__":
+    n =100000
+    count=0
+    for i in range(1000,n):
+        if prime(i)*prime(i+1):
+            count = count+1
+    print ('the total number of twin prime is')
+    print(count)
