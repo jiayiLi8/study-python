@@ -1,7 +1,5 @@
 the code of first question
-In [1]: %ls prj01.py
-prj01.py
-In [2]: %cat prj01.py
+
 from math import sqrt
 def prime(n):
     if n<=1:
@@ -18,13 +16,10 @@ if __name__ == "__main__":
         if prime(i)*prime(i+2):
             num = num+1
     print ('the total number of twin prime is ',num)
-In [3]: %run prj01.py
-the total number of twin prime is  8134
+
 
 the code of the second question
-In [4]: %ls prj01.2.py
-prj01.2.py
-In [5]: %cat prj01.2.py
+
 from math import sqrt
 import sys
 def is_prime(n):
